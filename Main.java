@@ -7,5 +7,11 @@ public class Main{
 
         LibroRepository repository = new LibroRepository();
         repository.guardarLibro(libro);
+        System.out.println("----------------------------");
+
+        Producto producto = new Producto(1215, "Crema para rizos", 15000);
+        EtiquetaService etiqueta = new EtiquetaService();
+
+        etiqueta.generarEtiqueta(producto);
     }
 }
