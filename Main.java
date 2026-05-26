@@ -13,5 +13,12 @@ public class Main{
         EtiquetaService etiqueta = new EtiquetaService();
 
         etiqueta.generarEtiqueta(producto);
+        System.out.println();
+
+        Usuario user = new Usuario("admin", "123");
+        AutenticacionServiceUser auth = new AutenticacionServiceUser();
+        ValidacionServiceUser check = new ValidacionServiceUser();
+
+        check.validacion(user, auth);
     }
 }
